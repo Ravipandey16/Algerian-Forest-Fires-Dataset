@@ -202,33 +202,33 @@
         <form action="{{ url_for('predict_datapoint') }}" method="post">
             <div class="input-row">
                 <div class="input-group">
-                    <input type="number" step="0.01" name="Temperature" placeholder="Temperature (°C)" required />
+                    <input type="number" step="0.01" name="Temperature" placeholder="Temperature: 22-42°C" required />
                 </div>
                 <div class="input-group">
-                    <input type="number" step="0.01" name="RH" placeholder="Relative Humidity (%)" required />
-                </div>
-            </div>
-
-            <div class="input-row">
-                <div class="input-group">
-                    <input type="number" step="0.01" name="Ws" placeholder="Wind Speed (km/h)" required />
-                </div>
-                <div class="input-group">
-                    <input type="number" step="0.01" name="Rain" placeholder="Rain (mm)" required />
+                    <input type="number" step="0.01" name="RH" placeholder="Relative Humidity (RH): 21-90%" required />
                 </div>
             </div>
 
             <div class="input-row">
                 <div class="input-group">
-                    <input type="number" step="0.01" name="FFMC" placeholder="FFMC Index" required />
+                    <input type="number" step="0.01" name="Ws" placeholder="Wind Speed (Ws): 6-29 km/h" required />
                 </div>
                 <div class="input-group">
-                    <input type="number" step="0.01" name="DMC" placeholder="DMC Index" required />
+                    <input type="number" step="0.01" name="Rain" placeholder="Rain: 0-16.8 mm" required />
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <input type="number" step="0.01" name="FFMC" placeholder="FFMC (28.6-92.5)" required />
+                </div>
+                <div class="input-group">
+                    <input type="number" step="0.01" name="DMC" placeholder="DMC (1.1-65.9)" required />
                 </div>
             </div>
 
             <div class="input-group">
-                <input type="number" step="0.01" name="ISI" placeholder="Initial Spread Index (ISI)" required />
+                <input type="number" step="0.01" name="ISI" placeholder="Initial Spread Index (0-18.5)" required />
             </div>
 
             <div class="input-row">
